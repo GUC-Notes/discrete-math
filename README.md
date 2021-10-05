@@ -1,2 +1,2 @@
 # discrete-math
-Note for Math5 course
+Lecture Notes for Math5 course

@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{geometry}
+\geometry{a4paper} 
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{multicol}
+\begin{document}
+\author{\textbf{Elshimaa Ahmed}}
+\title{\textbf{Math 501 \\
+\large Lecture 1\\}}
+\date {\today}
+\maketitle
+\noindent
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\section{Preposition}
+\paragraph{}
+  a preposition is a claim or a declerative statement which has a truth value , can be proven to be either $True$ or $False$
+\paragraph{For Example: }
+\begin{itemize}
+    \item "Shimaa studies discrete mathimatics" is considered as $Preposition$
+    \item "How was your day?" is considered as $ not-Preposition$
+    \item $x$ + 1 = 2 is considered as $non$ $declerative$ $statement$ because it is truth value depends on a variable so cannot be proven to be $True$ or $False$ without knowing the value of that variable 
+\end{itemize}
+\section{Logical Operators}
+     \begin{definition}[\textbf{Negation}]
+       let $p$ a preposition the negation of $p$ , denoted by $\neg$$p$ .The truth value of the negation of $p$ $\neg$ $p$ is the opposite value of $p$
+       , expressed in English as "It's not the case that. p" 
+     \end{definition}
+    \textbf{For Example:}
+    \begin{itemize}
+      \item the negation of "I have more than 5 friends" will become "I have at most 5 friends"
+    \end{itemize}
+
+    \begin{definition}[\textbf{Conjunction}]
+      let $p$ and $q$ be prepositions , the conjunction of $p$ and $q$ denoted by $p$ $\wedge$ $q$ is a preposition "$p$ and $q$" that become true only if both $p$ and $q$ are both $True$  
+    \end{definition}
+
+    \begin{definition}[\textbf{Disjunction}] 
+      let $p$ and $q$ be prepositions .The Disjunction of $p$ and $q$ denoted by $p$ $\vee$ $q$ is a preposition "$p$ or $q$" which is $False$ only if both of $p$ and $q$ are $False$
+
+    \end{definition}
+    \begin{definition}[\textbf{Exclusive Disjunction}]
+      let $p$ and $q$ be prepositions .The esclusive or denoted by $p$ $\oplus$ $q$ is a preposition that is $True$ if exactly one of $p$ or $q$ are $True$ , and $False$ otherwise
+    \end{definition}
+\section{Conditional Statements}
+\begin{definition}
+  let $p$ and $q$ be prepositions . The Conditional Statements $p$ $\rightarrow$ $q$ , "if $p$ then $q$" is false whenever p is $False$ or q is $True$
+\end{definition}
+The meaning of $p$ $\rightarrow$ $q$ assert that $q$ is true whenever $p$ holds but not vise versa ,when $p$ is $False$ it does not matter what the value of $q$ for implication to be $True$ ,$p$ is called (hypothesis or antecedent or premise ) while $q$ is called conclusion or consequence .
+\newline
+\newline
+\textbf{English Phrases to express conditional statements:}
+\begin{multicols}{2}
+\begin{itemize}
+  \item "if $p$, then $q$"
+  \item "$p$ implies $q$"
+  \item "$p$ is sufficient of $q$"
+  \item "$p$ only if $q$"
+  \item "$q$ is necessary for $p$" 
+  \item "$q$ unless $\neg$ $p$"  \textbf{important}
+  \item "$p$ only if $q$"
+  \item "$q$ whenever $p$ "
+\end{itemize}
+  
+\end{multicols}
+$\newline$ 
+\textbf{Converse, Contrapositive, and Inverse:}
+for conditional statement $p$ $\rightarrow$ $q$
+\begin{itemize}
+  \item $q$ $\rightarrow$ $p$ called the converse .
+  \item $\neg q$ $\rightarrow$ $\neg p$ called the Contrapositive and has the same truth value as the original statement
+  \item $\neg p$ $\rightarrow$ $\neg q$ called the inverse 
+\end{itemize}
+\begin{definition}
+  Let $p$ and $q$ be prepositions , the biconditional statement $p$ $\leftrightarrow$ $q$ is a preposition "$p$ if and only if $q$" which is $True$ when $p$ and $q$ have the same truth values and $False$ otherwise 
+\end{definition}
+\section{Precedence of Logical Operators}
+\begin{tabular}{|c|c|c|}
+ \hline
+ Logical Operator & Precedence \\
+ \hline
+ $\neg$ & 1\\
+ \hline
+ $\wedge$ & 2\\
+ $\vee$ & 3\\
+ \hline
+ $\rightarrow$ & 4\\
+ $\leftrightarrow $& 5\\
+ \hline
+\end{tabular}
+\end{document}

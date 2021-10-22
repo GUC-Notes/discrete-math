@@ -1,0 +1,83 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{geometry}
+\geometry{a4paper} 
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\begin{document}
+\author{\textbf{Elshimaa Ahmed}}
+\title{\textbf{Lecture 2}}
+\date {\today}
+\maketitle
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\section{Predicates}
+\paragraph{}
+predicates are statements involving variables such that " $x >3$ " . These statements are neither tru or false where the value of the variable is not specified.
+The statement "$x$ is greater than 3" involving two parts . the variable part $x$ and the predicate(property) it self " great than 3" .its denoted by $P(x)$  once a value is assigned to $x$ the $P(x)$ become a preposition
+\newline
+\newline
+\textbf{For example:}
+\newline
+let $P(x)$ denote the statement "$x > 3$" what are truth values of $P(4)$ and $P(2)$
+\newline
+\newline
+\textbf{Solution: } we obtain $P(4)$ by setting $x = 4$ in the statement, Hence $P(4)$  is the statement "$3 > 4$" which is $True$ . $P(2)$ is the statement "$ 2 >3$" which is $False$ 
+\section{Quantifiers}
+\begin{definition}[\textbf{Universal Quantifier}]
+    the universal Quantifier of $P(x)$ is the statement "$P(X)$ is $True$ for all values of $x$ in the domain". It is denoted by $\forall x P(x)$
+\begin{definition}[\textbf{Esistential Quantifier}]
+    the existential quantifier of $P(x)$ is the preposition " there exist an element $x$ such that $P(x)$ is $True$" . It is denoted by $\exists x P(x)$
+\end{definition}    
+\end{definition}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    statement & when true & when false \\ 
+    \hline
+    $\forall x P(x)$ & P(x) is $True$ for all values of $x$ & there is an $x$ for which $P(x)$ is $False$\\
+    $\exists x P(x)$ & there is an $x$ such that $P(x)$ is $True$ & $P(x)$ is $False$ for all $x$ \\
+    \hline
+\end{tabular}
+\newline\newline
+\textbf{English phrases with quatifiers:}
+\begin{itemize}
+    \item "no one is P(x)" $\longleftrightarrow$ $\forall x \neg P(x)$ or $\neg(\exists x P(x))$
+    \item "not every one is P(x)"$\longleftrightarrow$ $\neg(\forall x P(x))$ or $\exists x\neg P(x)$
+    \item "exactly one is P(x) " $\longleftrightarrow$ $\exists x (P(x) \wedge \forall y (P(y) \rightarrow x = y)) $ 
+    \item "all Q(x) is P(x) " $\longleftrightarrow$ $ \forall x (Q(x) \rightarrow P(x))$
+    \item "all Q(x) isnot P(x)" $\longleftrightarrow$ $\forall x (Q(x)\rightarrow \neg P(x))$
+    \item "some Q(x) are P(x)" $\longleftrightarrow$ $\exists x (Q(x)\wedge P(x))$
+    \item "some Q(x) are not P(x)" $\longleftrightarrow$ $\exists x (Q(x)\wedge \neg P(x))$
+\newline\newline
+\end{itemize}
+
+\noindent
+\textbf{Nested Quantifiers}
+\newline
+\newline
+\begin{tabular}{|p{2cm}|p{7cm}|p{7cm}|}
+    \hline
+    statement & when true? &when false? \\
+    \hline
+    $\forall \forall y P(x,y)$ & P(x,y) is true for all possible pairs & there is a pair (x,y) such that P(x,y) is false\\
+    $\forall y \forall x P(x,y)$ & &\\
+    \hline
+    $\forall x \exists y P(x,y)$ & for every x there is y (not necessary same for different values of x) such that P(x,y) is true & there is an x such that P(x,y) is false for every y \\
+    \hline
+    $\exists y \forall x P(x,y)$ & there is exist a specific (same) y that P(x,y) is true for all x & for every y there is at leasy one  x that P(x,y) fails\\
+    \hline
+    $\exists x \exists y P(x,y)$ & therer is a pair (x,y) for which P(x,y) is true & for all pairs (x,y) P(x,y) is False\\
+    $\exists y \exists x P(x,y) $&&\\
+    \hline 
+\end{tabular}
+
+
+
+\end{document}

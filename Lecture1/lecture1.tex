@@ -97,4 +97,15 @@ for conditional statement $p$ $\rightarrow$ $q$
  $\leftrightarrow $& 5\\
  \hline
 \end{tabular}
+\section{Logical Equavilance}
+two preposition $p$, $q$ are said to be equavilant if $p\leftrightarrow q$ is a $tautology$
+\begin{itemize}
+  \item $p\rightarrow q \equiv \neg p \vee q$
+  \item $p\leftrightarrow q \equiv (p\rightarrow q)\wedge (q\rightarrow p)$
+  \item $p \wedge T_{0} \equiv p$ , $p \vee F_{0} \equiv p$ (identity law)
+  \item $p \wedge F_{0} \equiv F_{0}$ , $p \vee T_{0} \equiv T_{0}$ (domination law)
+  \item $p \wedge p\equiv p$ , $p \vee p \equiv p$ (idempotent (okay to apply many times))
+  \item $\neg (p \wedge q) \equiv \neg p \vee \neg q$ , $\neg (p \vee q) \equiv \neg p \wedge \neg q$ (De morgans law)
+  \item $ p \wedge (p \vee q) \equiv p$ , $p \vee (p \wedge q)\equiv p$ (apsorption law)
+\end{itemize}
 \end{document}
